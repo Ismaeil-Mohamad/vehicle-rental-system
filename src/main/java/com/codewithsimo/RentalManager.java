@@ -32,6 +32,12 @@ public class RentalManager {
     }
 
     private void addVehicle() {
+        System.out.println("Enter model: ");
+        String model = scanner.nextLine();
+        System.out.println("Enter year: ");
+        int year = scanner.nextInt();
+        Car car = new Car(model, year);
+        vehicles.add(car);
 
     }
 
